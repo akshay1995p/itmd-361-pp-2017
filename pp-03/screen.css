@@ -28,31 +28,51 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ==== LAYOUT STYLES ==== */
 #content {
+	display: flex;
+	flex-flow: wrap;
 
 }
 
 #three,
 #two,
 #one {
+	hight: 33vw;
 
 }
 
 #three {
+	order: 3;
 
 }
 
 #two {
+	order: 2;
 
 }
 
 #one {
+	order: 1;
 
 }
 
 @media screen and (min-width: 600px) {
+	#one, #two {
+		flex: 50%;
+		height: 50vw;
+	}
+	#three {
+		flex: 100%;
+		height: 50vw;
+	}
 
 }
 
 @media screen and (min-width: 800px) {
+  #one,
+  #two,
+  #three {
+    flex: 100%;
+    height: 100vw;
+  }
 
 }
