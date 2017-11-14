@@ -19,7 +19,17 @@ body {
 }
 
 /* ===== LAYOUT STYLES ===== */
-
+#doorbell-ring {
+  background-color: blue;
+  cursor: pointer;
+  position: absolute;
+}
+#doorbell-ring:hover {
+  background-color: green;
+  color: white;
+}
+#dbell {
+  margin-top: 1em; /*15px*/
 
 /* ===== MODULAR STYLES ===== */
 
